@@ -1,0 +1,3 @@
+requests
+rsa
+thrift==0.9.3
