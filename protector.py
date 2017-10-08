@@ -169,7 +169,7 @@ def SEND_MESSAGE(op):
         if msg.toType == 2:
             if msg.text == "ginfo":
                 group = client.getGroup(msg.to)
-                md = "[Nama Grup]\n" + group.name + "\n\n[gid]\n" + group.id + "\n\n[Foto]\nhttp://dl.profile.line-cdn.net/" + group.pictureStatus + "\n\n[Creator]\n" + str(group.creator.displayName)
+                md = "[Nama Grup]\n" + group.name + "\n\n[gid]\n" + group.id + "\n\n[Foto]\nhttp://dl.profile.line-cdn.net/" + group.pictureStatus + "\n\n[Creator]\n" + str(group.creator)
                 if group.preventJoinByTicket is False: md += "\n\nInvite lewat URL: BUKA\n"
                 else: md += "\n\nInvite lewat URL: TUTUP\n"
                 if group.invitee is None: md += "\nANGGOTA: " + str(len(group.members)) + "\n\nTertunda: 0 Orang"
